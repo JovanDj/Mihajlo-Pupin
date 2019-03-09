@@ -1,0 +1,76 @@
+@mixin responsiveImage {
+  width: 100%;
+  height: auto;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+
+}
+
+body {
+  background-color: #F3EDF1;
+  margin: 0;
+  color: #393e59;
+  font-family: 'Roboto', sans-serif;
+  padding: 38px 0 0 0;
+
+      nav {
+          background-color: #F3EDF1;
+
+      position: fixed;
+      top: 0;
+      width: 100%;
+          ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    li {
+      margin-right: 10px;
+      padding: 10px;
+
+    }
+
+    a {
+      text-decoration: none;
+      border: 1px solid black;
+      padding: 10px;
+      color: #984873;
+    }
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    h1 {
+      padding-top: 15px;
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    img {
+      padding-top: 0;
+      @include responsiveImage();
+    }
+
+    figcaption {
+      text-align: center;
+    }
+
+
+  }
+}

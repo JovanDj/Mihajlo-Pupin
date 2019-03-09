@@ -2,37 +2,39 @@
 <html lang="sr">
 
 <head>
-  <meta name="charset" content="utf-8" />
+  <meta name="charset" content="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Михајло Пупин</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
 </head>
 
 <body>
+
+  <!-- Navigacioni meni -->
+  <nav>
+    <ul>
+      <li><a href="#biografija" title="Биографија">Биографија</a></li>
+      <li><a href="#obrazovanje" title="Образовање">Образовање</a></li>
+      <li><a href="#pronalasci" title="Проналасци">Проналасци</a></li>
+      <li><a href="#patenti" title="Патенти">Патенти</a></li>
+      <li><a href="#kontakt" title="Контакт">Контакт</a></li>
+      <li>
+        <a href="https://sr.wikipedia.org/wiki/Mihajlo_Pupin" title="Wikipedia" target="_blank">Wikipedia</a>
+      </li>
+    </ul>
+  </nav>
 
   <!-- Header -->
   <header>
     <h1>Михајло Пупин</h1>
     <figure>
-      <img src="slike/mihajlo_pupin.jpg" alt="Mihajlo Pupin" title="Mihajlo Pupin" width="323" height="424" />
+      <img src="slike/mihajlo_pupin.jpg" alt="Mihajlo Pupin" title="Mihajlo Pupin" width="323" height="424">
       <figcaption>Михајло Пупин, око 1890. године</figcaption>
     </figure>
-
-    <!-- Navigacioni meni -->
-    <nav>
-      <ul>
-        <li><a href="#biografija">Биографија</a></li>
-        <li><a href="#obrazovanje">Образовање</a></li>
-        <li><a href="#pronalasci">Проналасци</a></li>
-        <li><a href="#patenti">Патенти</a></li>
-        <li><a href="#kontakt">Контакт</a></li>
-
-
-        <li>
-          <a href="https://sr.wikipedia.org/wiki/Mihajlo_Pupin" target="_blank">Wikipedia</a>
-        </li>
-      </ul>
-    </nav>
   </header>
 
 
@@ -243,6 +245,8 @@
             <input type="email" id="email" name="email" required placeholder="Упиши своју имејл адресу">
           </div>
 
+          <br>
+
           <div class="polje">
             <label>Оцена странице</label>
 
@@ -263,7 +267,6 @@
           </div>
 
           <br>
-
 
           <div class="polje">
             <textarea rows="8" id="poruka" cols="100" placeholder="Садржај поруке..."></textarea>

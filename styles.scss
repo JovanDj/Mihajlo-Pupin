@@ -14,14 +14,14 @@ html {
 }
 
 body {
-  background-color: #F3EDF1;
+  background-color: #FCFCFC;
   margin: 0;
-  color: #393e59;
+  color: #575757;
   font-family: 'Roboto', sans-serif;
   padding: 38px 0 0 0;
 
       nav {
-          background-color: #F3EDF1;
+          background-color: #FCFCFC;
 
       position: fixed;
       top: 0;
@@ -34,19 +34,33 @@ body {
       justify-content: center;
       align-items: center;
     }
+    ul {
+      padding-top: 10px;
+            padding-bottom: 10px;
+
+    }
 
     li {
       margin-right: 10px;
       padding: 10px;
-
     }
 
     a {
       text-decoration: none;
       border: 1px solid black;
       padding: 10px;
-      color: #984873;
+      border-radius: 0;
+      color: #525252;
+
+      &:hover {
+        transition: all 0.1s ease-in;
+        font-style: 700;
+              border-radius: 10px;
+
+      }
     }
+
+
   }
 
   header {
@@ -55,6 +69,10 @@ body {
     justify-content: center;
     align-items: center;
     align-content: center;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/5f/Pupin_Hall%2C_Columbia_University_%286435263439%29.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 
     h1 {
       padding-top: 15px;

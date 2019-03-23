@@ -1,12 +1,14 @@
 const express = require('express')
 const router = express.Router()
-const Student = require('../models/student')
+const sequelize = require('../config/database')
 
 /* GET users listing. */
 router.get('/', (req, res, next) => {
-  Student.findAll().then(studenti => {
+  sequelize.query(
+    'SELECT * FROM student INNER JOIN predavanje ON student.ID_STUDENTA = predavanje.ID_STUDENTA'
+    , { type: sequelize.QueryTypes.SELECT }).then(studenti => {
     console.log(studenti)
-    res.sendStatus(200)
+    res.render('studenti', { studenti })
   })
 })
 

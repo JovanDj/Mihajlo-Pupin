@@ -1,0 +1,10 @@
+extends layout
+
+block content
+
+  ul
+    each student in studenti
+      li= student.ID_STUDENTA
+      li= student.IME_STUDENTA
+      li= student.BROJ_INDEKSA
+      li= student.PRISUTNOST

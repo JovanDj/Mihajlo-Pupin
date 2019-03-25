@@ -26,9 +26,12 @@ router.get('/dodaj', (req, res) => {
 router.post('/dodaj', (req, res) => {
   const student = req.body
 
-  sequelize.query(`INSERT INTO student(IME_STUDENTA, PREZIME_STUDENTA, BROJ_INDEKSA) VALUES("${student.ime_studenta}", "${student.prezime_studenta}", "${student.broj_indeksa}")`, { type: sequelize.QueryTypes.INSERT }).then(student => {
-    res.redirect('/studenti')
-  })
+  sequelize.query(`INSERT INTO student(IME_STUDENTA, PREZIME_STUDENTA, BROJ_INDEKSA) VALUES("${student.ime_studenta}", "${student.prezime_studenta}", "${student.broj_indeksa}")`, { type: sequelize.QueryTypes.INSERT })
+    .then(student => {
+      res.redirect('/predavanja/dodaj')
+    }).catch(err => {
+      res.send(err)
+    })
 })
 
 module.exports = router

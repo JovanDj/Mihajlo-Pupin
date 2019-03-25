@@ -7,13 +7,10 @@ const sassMiddleware = require('node-sass-middleware')
 
 const indexRouter = require('./routes/index')
 const studentiRouter = require('./routes/studenti')
-const sequelize = require('./config/database')
+const predavanjaRouter = require('./routes/predavanja')
+require('./sequelize')
 
 const app = express()
-
-sequelize.authenticate().then(() => {
-  console.log('Database connected')
-}).catch(err => console.log(err))
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'))
@@ -29,11 +26,13 @@ app.use(sassMiddleware({
   indentedSyntax: false, // true = .sass and false = .scss
   sourceMap: true
 }))
+
 app.use(express.static(path.join(__dirname, 'public')))
 app.use('/assets', express.static(path.join(__dirname, '/node_modules/')))
 
 app.use('/', indexRouter)
 app.use('/studenti', studentiRouter)
+app.use('/predavanja', predavanjaRouter)
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {

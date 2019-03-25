@@ -1,34 +1,7 @@
 extends layout
 
 block content
-  nav.navbar.navbar-expand-lg.navbar-light.bg-light
-    a.navbar-brand(href='/') Student potpis
-    button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
-      span.navbar-toggler-icon
-    #navbarSupportedContent.collapse.navbar-collapse
-      ul.navbar-nav.mr-auto
-        li.nav-item.active
-          a.nav-link(href='#')
-            | Home
-            span.sr-only (current)
-        li.nav-item
-          a.nav-link(href='#') Link
-        li.nav-item.dropdown
-          a#navbarDropdown.nav-link.dropdown-toggle(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
-            | Dropdown
-          .dropdown-menu(aria-labelledby='navbarDropdown')
-            a.dropdown-item(href='#') Action
-            a.dropdown-item(href='#') Another action
-            .dropdown-divider
-            a.dropdown-item(href='#') Something else here
-        li.nav-item
-          a.nav-link.disabled(href='#' tabindex='-1' aria-disabled='true') Disabled
 
-  ul
-    each student in studenti
-      li= student.ID_STUDENTA
-      li= student.IME_STUDENTA
-      li= student.BROJ_INDEKSA
-      li= student.PRISUTNOST
-
-
+  .jumbotron
+    h1 Aplikacija za pracenje uslova za sticanje potpisa
+    h2 Jovan Djukic IT 11/15

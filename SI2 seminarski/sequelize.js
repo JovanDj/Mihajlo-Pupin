@@ -1,6 +1,6 @@
 const Sequelize = require('sequelize')
 
-module.exports = new Sequelize('studenti_potpis', 'root', '', {
+const sequelize = new Sequelize('studenti_potpis', 'root', '', {
   host: 'localhost',
   dialect: 'mysql',
   operatorsAliases: false,
@@ -12,3 +12,5 @@ module.exports = new Sequelize('studenti_potpis', 'root', '', {
     idle: 10000
   }
 })
+
+module.exports = sequelize

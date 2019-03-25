@@ -5,7 +5,23 @@ html
     link(rel='stylesheet', href='/assets/bootstrap/dist/css/bootstrap.min.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
-    block content
+
+    nav.navbar.navbar-expand-lg.navbar-light.bg-light
+      a.navbar-brand(href='/') Studenti potpis
+      button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navigacioni-meni' )
+        span.navbar-toggler-icon
+      #navigacioni-meni.collapse.navbar-collapse
+        ul.navbar-nav.mr-auto
+          li.nav-item
+            a.nav-link(href='/studenti')
+              | Studenti
+          li.nav-item
+            a.nav-link(href='/studenti/dodaj') Dodaj studenta
+          li.nav-item
+            a.nav-link(href='/predavanja/dodaj') Dodaj predavanje
+
+    .container-fluid
+      block content
 
     script(src="/assets/jquery/dist/jquery.min.js")
     script(src="/assets/popper.js/dist/umd/popper.min.js")

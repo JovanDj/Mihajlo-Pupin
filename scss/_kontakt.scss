@@ -1,0 +1,58 @@
+.kontakt {
+  .podnaslov {
+    text-align: center;
+  }
+
+  &-forma {
+    .okvir {
+      width: 50%;
+      margin: 0 auto;
+      border-radius: 10px;
+      background-color: #f2f2f2;
+    }
+
+    .polje {
+      padding: 15px;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    label {
+      display: block;
+    }
+
+    .ocena {
+      padding: 15px;
+    }
+
+    .ponudjene-ocene {
+      display: flex;
+      justify-content: space-around;
+      .polje {
+        display: flex;
+        input {
+          width: initial;
+        }
+      }
+    }
+
+    .button {
+      margin-left: 15px;
+      padding: 5px 10px;
+      background-color: white;
+      color: black;
+      border: 2px solid #4caf50;
+
+      &:hover {
+        transition: all 0.1s ease-in;
+        background-color: #4caf50;
+        color: white;
+      }
+    }
+  }
+}

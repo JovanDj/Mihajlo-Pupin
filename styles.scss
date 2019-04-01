@@ -1,48 +1,11 @@
 @import "scss/variables";
 @import "scss/mixins";
+@import "scss/reset";
+
 @import "scss/header";
 @import "scss/biografija";
 @import "scss/obrazovanje";
 @import "scss/pronalasci";
 @import "scss/patenti";
 @import "scss/video";
-
-* {
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 16px;
-}
-
-body {
-  background-color: #fcfcfc;
-  margin: 0;
-  color: $bg-color;
-  font-family: "Roboto", sans-serif;
-  padding: 0 15px 0 15px;
-  line-height: 1.3rem;
-  word-break: break-word;
-}
-
-h2 {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  font-size: 2rem;
-}
-
-h3 {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  font-size: 1.8rem;
-}
-
-img {
-  @include responsiveImage();
-}
-
-
-hr {
-  border: 3px solid #ccc;
-  border-radius: 3px;
-}
+@import "scss/kontakt";

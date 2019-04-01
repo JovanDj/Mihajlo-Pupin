@@ -4,16 +4,16 @@
   }
 
   .tabela {
+    @include border();
     margin: 0 auto;
-    border: 1px solid #000;
     border-collapse: collapse;
 
     .red {
-      border: 1px solid #000;
+      @include border();
     }
 
     .celija {
-      border: 1px solid #000;
+      @include border();
       padding: 15px;
     }
 

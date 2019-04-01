@@ -1,0 +1,26 @@
+.patenti {
+  .tabela {
+    margin: 0 auto;
+    border: 1px solid #000;
+    border-collapse: collapse;
+
+    .red {
+      border: 1px solid #000;
+    }
+
+    .celija {
+      border: 1px solid #000;
+      padding: 15px;
+    }
+
+    .telo-tabele {
+      .red:nth-child(even) {
+        background-color: #eee;
+      }
+
+      .red:hover {
+        background-color: #ccc;
+      }
+    }
+  }
+}

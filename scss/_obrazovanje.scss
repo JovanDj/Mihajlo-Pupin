@@ -1,0 +1,5 @@
+.obrazovanje {
+  .citat {
+    @include citat();
+  }
+}

@@ -1,94 +1,41 @@
-@mixin responsiveImage {
-  width: 100%;
-  height: auto;
-}
-
+@import "scss/variables";
+@import "scss/mixins";
+@import "scss/header";
+@import "scss/biografija";
+@import "scss/obrazovanje";
+@import "scss/pronalasci";
+@import "scss/patenti";
 
 * {
   box-sizing: border-box;
 }
 
 html {
-    font-size: 16px;
-
+  font-size: 16px;
 }
 
 body {
-  background-color: #FCFCFC;
+  background-color: #fcfcfc;
   margin: 0;
-  color: #575757;
-  font-family: 'Roboto', sans-serif;
-  padding: 38px 0 0 0;
+  color: $bg-color;
+  font-family: "Roboto", sans-serif;
+  padding: 0 15px 0 15px;
+  line-height: 1.3rem;
+  word-break: break-word;
+}
 
-      nav {
-          background-color: #FCFCFC;
+h2 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
 
-      position: fixed;
-      top: 0;
-      width: 100%;
-          ul {
-      margin: 0;
-      padding: 0;
-      list-style-type: none;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    ul {
-      padding-top: 10px;
-            padding-bottom: 10px;
+h3 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+}
 
-    }
-
-    li {
-      margin-right: 10px;
-      padding: 10px;
-    }
-
-    a {
-      text-decoration: none;
-      border: 1px solid black;
-      padding: 10px;
-      border-radius: 0;
-      color: #525252;
-
-      &:hover {
-        transition: all 0.1s ease-in;
-        font-style: 700;
-              border-radius: 10px;
-
-      }
-    }
-
-
-  }
-
-  header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/5f/Pupin_Hall%2C_Columbia_University_%286435263439%29.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-
-    h1 {
-      padding-top: 15px;
-      margin: 0;
-      font-size: 2rem;
-    }
-
-    img {
-      padding-top: 0;
-      @include responsiveImage();
-    }
-
-    figcaption {
-      text-align: center;
-    }
-
-
-  }
+img {
+  @include responsiveImage();
 }

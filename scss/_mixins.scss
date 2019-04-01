@@ -1,0 +1,19 @@
+@mixin responsiveImage {
+  max-width: 100%;
+  height: auto;
+}
+
+@mixin transition {
+  transition: all 1s ease-in-out;
+}
+
+@mixin citat {
+  border-left: 5px solid #000;
+  padding: 20px;
+  border-radius: 20px;
+  line-height: 1.5rem;
+
+  &::first-letter {
+    font-size: 2rem;
+  }
+}

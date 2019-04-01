@@ -1,0 +1,80 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/5/5f/Pupin_Hall%2C_Columbia_University_%286435263439%29.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: #fff;
+  height: 100vh;
+
+  .nav {
+    background-color: #fcfcfc;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    .meni {
+      margin: 0;
+      padding: 0;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      list-style-type: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .stavka {
+      margin-right: 10px;
+      padding: 10px;
+    }
+
+    .link {
+      text-decoration: none;
+      border: 1px solid black;
+      padding: 10px;
+      border-radius: 0;
+      color: #525252;
+
+      &:hover {
+        transition: all 0.1s ease-in;
+        font-style: 700;
+        border-radius: 10px;
+      }
+    }
+  }
+
+  .glavni-naslov {
+    padding-top: 15px;
+    margin: 15px 0 0 0;
+    font-size: 2rem;
+    text-shadow: 3px 5px 2px #474747;
+    font-variant: small-caps;
+  }
+
+  .slika {
+    padding-top: 0;
+    border-radius: 50%;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.75);
+    border: 1px solid #000;
+
+    &:hover {
+      box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.75);
+      border: 2px solid #000;
+      transform: scale(1.2);
+
+      @include transition();
+    }
+  }
+
+  .opis-slike {
+    text-shadow: 3px 5px 2px #474747;
+    text-align: center;
+    font-size: 1.1rem;
+    margin-top: 15px;
+    font-variant: small-caps;
+  }
+}

@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("slike/pupin_hall.jpg");
+  background-image: url('slike/pupin_hall.jpg');
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -42,6 +42,8 @@
       &:hover {
         transition: all 0.1s ease-in;
         font-style: 700;
+        color: #111;
+        background: #eef;
         border-radius: 10px;
       }
     }

@@ -8,7 +8,7 @@ body {
   background-color: #fcfcfc;
   margin: 0;
   color: #575757;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   padding: 0 15px 0 15px;
   line-height: 1.3rem;
   word-break: break-word; }
@@ -30,6 +30,9 @@ img {
 hr {
   border: 3px solid #ccc;
   border-radius: 3px; }
+
+section {
+  padding-top: 35px; }
 
 .header {
   display: flex;
@@ -68,6 +71,8 @@ hr {
       .header .nav .link:hover {
         transition: all 0.1s ease-in;
         font-style: 700;
+        color: #111;
+        background: #eef;
         border-radius: 10px; }
   .header .glavni-naslov {
     padding-top: 15px;

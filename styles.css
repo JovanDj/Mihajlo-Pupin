@@ -1,159 +1,107 @@
 .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/5/5f/Pupin_Hall%2C_Columbia_University_%286435263439%29.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
   color: #fff;
-  height: 100vh;
-}
-.header .nav {
-  background-color: #fcfcfc;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-.header .nav .meni {
-  margin: 0;
-  padding: 0;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.header .nav .stavka {
-  margin-right: 10px;
-  padding: 10px;
-}
-.header .nav .link {
-  text-decoration: none;
-  border: 1px solid black;
-  padding: 10px;
-  border-radius: 0;
-  color: #525252;
-}
-.header .nav .link:hover {
-  -webkit-transition: all 0.1s ease-in;
-  transition: all 0.1s ease-in;
-  font-style: 700;
-  border-radius: 10px;
-}
-.header .glavni-naslov {
-  padding-top: 15px;
-  margin: 15px 0 0 0;
-  font-size: 2rem;
-  text-shadow: 3px 5px 2px #474747;
-  font-variant: small-caps;
-}
-.header .slika {
-  padding-top: 0;
-  border-radius: 50%;
-  -webkit-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.75);
-          box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.75);
-  border: 1px solid #000;
-}
-.header .slika:hover {
-  -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.75);
-          box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.75);
-  border: 2px solid #000;
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
-}
-.header .opis-slike {
-  text-shadow: 3px 5px 2px #474747;
-  text-align: center;
-  font-size: 1.1rem;
-  margin-top: 15px;
-  font-variant: small-caps;
-}
+  height: 100vh; }
+  .header .nav {
+    background-color: #fcfcfc;
+    position: fixed;
+    top: 0;
+    width: 100%; }
+    .header .nav .meni {
+      margin: 0;
+      padding: 0;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      list-style-type: none;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .header .nav .stavka {
+      margin-right: 10px;
+      padding: 10px; }
+    .header .nav .link {
+      text-decoration: none;
+      border: 1px solid black;
+      padding: 10px;
+      border-radius: 0;
+      color: #525252; }
+      .header .nav .link:hover {
+        transition: all 0.1s ease-in;
+        font-style: 700;
+        border-radius: 10px; }
+  .header .glavni-naslov {
+    padding-top: 15px;
+    margin: 15px 0 0 0;
+    font-size: 2rem;
+    text-shadow: 3px 5px 2px #474747;
+    font-variant: small-caps; }
+  .header .slika {
+    padding-top: 0;
+    border-radius: 50%;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.75);
+    border: 1px solid #000; }
+    .header .slika:hover {
+      box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.75);
+      border: 2px solid #000;
+      transform: scale(1.2);
+      transition: all 1s ease-in-out; }
+  .header .opis-slike {
+    text-shadow: 3px 5px 2px #474747;
+    text-align: center;
+    font-size: 1.1rem;
+    margin-top: 15px;
+    font-variant: small-caps; }
 
 .biografija .citat {
   border-left: 5px solid #000;
   padding: 20px;
   border-radius: 20px;
-  line-height: 1.5rem;
-}
-.biografija .citat::first-letter {
-  font-size: 2rem;
-}
+  line-height: 1.5rem; }
+  .biografija .citat::first-letter {
+    font-size: 2rem; }
 
 .obrazovanje .citat {
   border-left: 5px solid #000;
   padding: 20px;
   border-radius: 20px;
-  line-height: 1.5rem;
-}
-.obrazovanje .citat::first-letter {
-  font-size: 2rem;
-}
+  line-height: 1.5rem; }
+  .obrazovanje .citat::first-letter {
+    font-size: 2rem; }
 
 .pronalasci .figure {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   border: 1px solid #000;
-  border-radius: 10px;
-}
+  border-radius: 10px; }
 
 .patenti .tabela {
   margin: 0 auto;
   border: 1px solid #000;
-  border-collapse: collapse;
-}
-.patenti .tabela .red {
-  border: 1px solid #000;
-}
-.patenti .tabela .celija {
-  border: 1px solid #000;
-  padding: 15px;
-}
-.patenti .tabela .telo-tabele .red:nth-child(even) {
-  background-color: #eee;
-}
-.patenti .tabela .telo-tabele .red:hover {
-  background-color: #ccc;
-}
+  border-collapse: collapse; }
+  .patenti .tabela .red {
+    border: 1px solid #000; }
+  .patenti .tabela .celija {
+    border: 1px solid #000;
+    padding: 15px; }
+  .patenti .tabela .telo-tabele .red:nth-child(even) {
+    background-color: #eee; }
+  .patenti .tabela .telo-tabele .red:hover {
+    background-color: #ccc; }
 
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 html {
-  font-size: 16px;
-}
+  font-size: 16px; }
 
 body {
   background-color: #fcfcfc;
@@ -162,24 +110,20 @@ body {
   font-family: "Roboto", sans-serif;
   padding: 0 15px 0 15px;
   line-height: 1.3rem;
-  word-break: break-word;
-}
+  word-break: break-word; }
 
 h2 {
   margin-top: 30px;
   margin-bottom: 30px;
-  font-size: 2rem;
-}
+  font-size: 2rem; }
 
 h3 {
   margin-top: 30px;
   margin-bottom: 30px;
-  font-size: 1.8rem;
-}
+  font-size: 1.8rem; }
 
 img {
   max-width: 100%;
-  height: auto;
-}
+  height: auto; }
 
 /*# sourceMappingURL=styles.css.map */

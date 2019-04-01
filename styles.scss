@@ -5,6 +5,7 @@
 @import "scss/obrazovanje";
 @import "scss/pronalasci";
 @import "scss/patenti";
+@import "scss/video";
 
 * {
   box-sizing: border-box;
@@ -38,4 +39,10 @@ h3 {
 
 img {
   @include responsiveImage();
+}
+
+
+hr {
+  border: 3px solid #ccc;
+  border-radius: 3px;
 }

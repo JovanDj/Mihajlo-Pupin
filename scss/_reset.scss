@@ -7,10 +7,12 @@ html {
 }
 
 body {
-  background-color: #fcfcfc;
+  background-color: $bg-color;
   margin: 0;
-  color: $bg-color;
+  color: $font-color;
   font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-style: normal;
   padding: 0 15px 0 15px;
   line-height: 1.3rem;
   word-break: break-word;

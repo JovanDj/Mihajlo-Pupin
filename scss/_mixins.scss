@@ -13,6 +13,10 @@
   border-radius: 20px;
   line-height: 1.5rem;
 
+  @media only screen and (max-width: $md) {
+    margin: 0;
+  }
+
   &::first-letter {
     font-size: 2rem;
   }

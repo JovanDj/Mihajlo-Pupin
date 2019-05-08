@@ -25,20 +25,22 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-direction: row;
+
+      @media only screen and (max-width: $md) {
+        flex-direction: column;
+        margin-right: 15px;
+        margin-left: 15px;
+       
+      }
     }
 
     .stavka {
+      border: 1px solid black;
+      border-radius: 0;
       margin-right: 10px;
       padding: 10px;
-    }
-
-    .link {
-      text-decoration: none;
-      border: 1px solid black;
-      padding: 10px;
-      border-radius: 0;
-      color: #525252;
-
+      
       &:hover {
         transition: all 0.1s ease-in;
         font-style: 700;
@@ -46,6 +48,17 @@
         background: #eef;
         border-radius: 10px;
       }
+
+      @media only screen and (max-width: $md) {
+        width: 100%;
+        padding: 10px;
+      }
+    }
+
+    .link {
+      text-decoration: none;
+      color: #525252;
+
     }
   }
 

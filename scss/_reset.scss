@@ -22,12 +22,26 @@ h2 {
   margin-top: 30px;
   margin-bottom: 30px;
   font-size: 2rem;
+  line-height: 2rem;
+
+
+  @media only screen and (max-width: $md) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 }
 
 h3 {
   margin-top: 30px;
   margin-bottom: 30px;
   font-size: 1.8rem;
+  line-height: 2rem;
+
+
+  @media only screen and (max-width: $md) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 }
 
 img {
@@ -41,4 +55,10 @@ hr {
 
 section {
   padding-top: 35px;
+
+  @media only screen and (max-width: $md) {
+    margin-top: 20px;
+    padding-top: 20px;
+
+  }
 }

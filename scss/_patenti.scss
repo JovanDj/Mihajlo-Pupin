@@ -7,14 +7,25 @@
     @include border();
     margin: 0 auto;
     border-collapse: collapse;
+    border: 0;
 
     .red {
       @include border();
+
+      @media only screen and (max-width: $md) {
+        display: block;
+        margin-bottom: 10px;
+      } 
+
     }
 
     .celija {
       @include border();
       padding: 15px;
+
+      @media only screen and (max-width: $md) {
+       display: block;
+      } 
     }
 
     .telo-tabele {

@@ -245,13 +245,25 @@ section {
   border: 1px solid #000;
   margin: 0 auto;
   border-collapse: collapse;
+  border: 0;
 }
 .patenti .tabela .red {
   border: 1px solid #000;
 }
+@media only screen and (max-width: 768px) {
+  .patenti .tabela .red {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
 .patenti .tabela .celija {
   border: 1px solid #000;
   padding: 15px;
+}
+@media only screen and (max-width: 768px) {
+  .patenti .tabela .celija {
+    display: block;
+  }
 }
 .patenti .tabela .telo-tabele .red:nth-child(even) {
   background-color: #eee;

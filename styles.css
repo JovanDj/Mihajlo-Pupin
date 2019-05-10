@@ -13,9 +13,9 @@ html {
 }
 
 body {
-  background-color: #fcfcfc;
+  background-color: #fff;
   margin: 0;
-  color: #575757;
+  color: #95969D;
   font-family: Roboto, sans-serif;
   font-weight: normal;
   font-style: normal;
@@ -92,7 +92,7 @@ section {
   height: 100vh;
 }
 .header .nav {
-  background-color: #fcfcfc;
+  background-color: #fff;
   position: fixed;
   top: 0;
   width: 100%;
@@ -148,7 +148,7 @@ section {
 }
 .header .nav .link {
   text-decoration: none;
-  color: #525252;
+  color: #7A7B85;
 }
 .header .glavni-naslov {
   padding-top: 15px;

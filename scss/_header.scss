@@ -8,13 +8,16 @@
   background-attachment: fixed;
   background-position: center;
   color: #fff;
-  height: 100vh;
 
   .nav {
     background-color: $bg-color;
     position: fixed;
     top: 0;
     width: 100%;
+
+    @media only screen and (max-width: $md) {
+      position: relative;
+      }
 
     .meni {
       margin: 0;
@@ -29,9 +32,7 @@
 
       @media only screen and (max-width: $md) {
         flex-direction: column;
-        margin-right: 15px;
-        margin-left: 15px;
-       
+      
       }
     }
 

@@ -148,6 +148,20 @@ section {
     padding: 10px;
   }
 }
+.header .nav .zatvori {
+  color: #111;
+  border: 1px solid #111;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+  display: none;
+  float: right;
+}
+@media only screen and (max-width: 768px) {
+  .header .nav .zatvori {
+    display: block;
+  }
+}
 .header .nav .link {
   text-decoration: none;
   color: #7A7B85;

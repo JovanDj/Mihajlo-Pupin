@@ -32,7 +32,6 @@
 
       @media only screen and (max-width: $md) {
         flex-direction: column;
-      
       }
     }
 
@@ -49,16 +48,30 @@
         border-radius: 10px;
       }
 
+
       @media only screen and (max-width: $md) {
         width: 100%;
         padding: 10px;
       }
     }
 
+    .zatvori {
+      color: #111;
+      border: 1px solid #111;
+      margin-top: 5px;
+      margin-bottom: 10px;
+      padding: 10px;
+      display: none;
+      float: right;
+
+         @media only screen and (max-width: $md) {
+          display: block;
+      }
+    }
+
     .link {
       text-decoration: none;
       color: $link-color;
-
     }
   }
 

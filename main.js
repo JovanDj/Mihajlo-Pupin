@@ -1,21 +1,40 @@
-const c = document.getElementById("canvas");
-const ctx = c.getContext("2d");
-let x = 0;
 
-ctx.beginPath();
-ctx.moveTo(100, 0);
-ctx.lineTo(100, 200);
-ctx.stroke();
 
-function drawCircle(x) {
-  ctx.beginPath();
-  ctx.arc(x, 100, 10, 0, 2 * Math.PI);
-  ctx.fillStyle = "red";
-  ctx.fill();
-}
+$(document).ready(() =>{
 
-setInterval(function () {
-  ctx.clearRect(0, 0, 200, 200);
-  drawCircle(x % 200);
-  x++;
-}, 2);
+  // Otvaranje i zatvaranje menija
+  document.querySelector('.zatvori').addEventListener('click', () => {
+    const meni = document.querySelector('.meni');
+
+    if (meni.style.display !== 'none') {
+      meni.style.display = 'none';
+    } else {
+      meni.style.display = 'block';
+
+    }
+  })
+
+  // Smooth scroll
+  // Dodajem click event na svaku stavku menija
+  $(".stavka a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    // Proveravam da li postoji hash #
+    if (this.hash !== "") {
+      // Sprecavam uobicajeno ponasanje
+      event.preventDefault();
+
+      // Cuvam taj #
+      const hash = this.hash;
+
+      // Koristim metodu iz jquery animate() da animiram scroll
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Nakon scroll-a navodim novi hash
+        window.location.hash = hash;
+      });
+    } 
+  });
+});
